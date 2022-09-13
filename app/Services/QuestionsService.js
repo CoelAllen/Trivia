@@ -15,7 +15,7 @@ class QuestionsService {
         type: 'boolean',
       }
     })
-    appState.questions = res.results.map(rawData => new Question(rawData))
+    appState.questions = res.data.results.map(rawData => new Question(rawData))
   }
 }
 
